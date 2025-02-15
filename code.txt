@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Systems Workshop - Saveetha University</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap');
+        body {
+            font-family: 'Bodoni Moda', serif;
+            margin: 0;
+            padding: 0;
+            background: #FFF7D1;
+            color: #563A9C;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        .hero {
+            background: linear-gradient(rgba(100, 50, 200, 0.6), rgba(80, 30, 180, 0.8)), url('https://source.unsplash.com/1600x900/?technology,innovation') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hero h1 {
+            font-size: 4em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.5em;
+            max-width: 700px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background: #6A42C2;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .btn:hover {
+            background: #563A9C;
+        }
+        .info-section {
+            padding: 60px 20px;
+            background: #8B5DFF;
+            color: white;
+            border-radius: 0 0 50px 50px;
+        }
+        .info-container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .venue {
+            background: #FFF7D1;
+            padding: 40px;
+            font-size: 1.3em;
+            color: #563A9C;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 40px;
+            justify-items: center;
+        }
+        .grid-item {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .grid-item:hover {
+            transform: translateY(-10px);
+        }
+        .single-grid {
+            grid-column: span 2;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Embedded Systems Workshop</h1>
+        <p>Exclusive for Saveetha University Students from 2nd Year and Above. Build, Learn, and Innovate with Embedded Systems.</p>
+        <a href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" class="btn">Register Now</a>
+    </div>
+
+    <div class="info-section">
+        <div class="info-container">
+            <h2><strong>Workshop Details</strong></h2>
+            <p><strong>Date:</strong> 24/02/25</p>
+            <p><strong>Eligibility:</strong> 2nd Year and Above, Saveetha University Students</p>
+            <p><strong>Venue:</strong> Nalli Arangam</p>
+            <p><strong>Team Structure:</strong> 4 Members - Team Leader, IoT Member, Embedded System Head, Hardware Head</p>
+            <p><strong>Entry:</strong> Free!</p>
+        </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item"><h3>Hands-On Experience</h3><p>Work directly with microcontrollers, sensors, and real-world applications.</p></div>
+        <div class="grid-item"><h3>Expert Mentorship</h3><p>Guidance from industry professionals and university faculty.</p></div>
+        <div class="grid-item single-grid"><h3>Innovate & Compete</h3><p>Engage in live projects and showcase your creativity.</p></div>
+    </div>
+</body>
+</html>
